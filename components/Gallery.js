@@ -10,9 +10,10 @@ return (
   <>
     <SafeAreaView>
       <FlatList
-        data={[...new Array(10)].map((_, i) => i.toString())}
+        data={[...new Array(10000)].map((_, i) => i.toString())}
         style={styles.list}
-        numColumns={2}
+        
+        numColumns={3}
         keyExtractor={(e) => e}
         renderItem={({ item }) => (
           <Image
